@@ -1,0 +1,13 @@
+body {
+
+margin: 0;
+height: 100vh;
+display: grid;
+place-items: center;
+background-color: black !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

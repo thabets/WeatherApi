@@ -1,0 +1,44 @@
+.cardBody{
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 1rem;
+  border-color: transparent !important;
+  margin: 10px;
+ max-width: 250px;
+
+}
+.cardBody2{
+  
+  background: radial-gradient(at 50% 120%,#9F3100 5px,
+    black);
+    color: white;
+    border-color: transparent !important;
+   
+}
+.btnclr{
+background-color: black !important;
+color: #9F3100 !important;
+border-color: transparent !important;
+
+margin-top: 5px;
+
+}
+.btnclr:hover {
+  background-color: rgba(255, 228, 196, 0.225) !important;
+  color: black !important;
+}
+
+
+.frmclr{
+  background-color: black !important;
+    color: #9F3100 !important;
+    border-color: transparent !important;
+    padding-right: 3px;
+}
+
+.card{
+  --bs-card-border-color: black !important;
+ 
+}
