@@ -7,13 +7,22 @@ import { useState, useEffect } from "react";
 function App() {
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
-  
+  const [data, setData] = useState('')
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const city = event.target.city.value;
     console.log(city);
     event.target.reset();
+
+     fetch(
+       `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
+     )
+       .then((res) => res.json())
+       .then((result) => {
+         setData(result);
+         console.log(result);
+       });
   };
 
   useEffect(() => {
